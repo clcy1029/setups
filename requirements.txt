@@ -1,0 +1,85 @@
+# ---- Python tooling ----
+ipython
+jupyter
+jupyterlab
+notebook
+
+# Code quality & formatting
+black
+ruff
+mypy
+pre-commit
+
+# Testing
+pytest
+pytest-cov
+
+# ---- ML & AI ----
+torch
+torchvision
+torchaudio
+transformers
+datasets
+accelerate
+scikit-learn
+scipy
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+
+# Hugging Face ecosystem for LLM
+evaluate            # 评估指标 (PPL, BLEU 等)
+peft                # LoRA/QLoRA 微调
+bitsandbytes        # 低比特量化 (Mac 上部分功能有限)
+trl                 # RLHF / DPO
+sentencepiece       # 分词 (LLaMA/Mistral 等依赖)
+
+# Apple MLX stack
+mlx                 # MLX 核心库 (MPS 加速)
+mlx-lm              # 在 MLX 上跑 LLaMA/Mistral
+mlx-data            # 数据加载工具
+
+# ---- Vector DB ----
+faiss-cpu        # 本地相似度搜索
+chromadb         # 轻量级开源 vector DB
+qdrant-client    # Qdrant 向量数据库
+weaviate-client  # Weaviate 向量数据库
+
+
+# ---- Backend / APIs ----
+fastapi
+uvicorn
+pydantic
+requests
+httpx
+gradio              # Web UI demo
+
+# ---- Data Engineering ----
+sqlalchemy
+pymongo
+psycopg2-binary
+pyarrow
+polars
+dask
+apache-airflow==2.9.3
+
+# ---- Streaming & Messaging ----
+kafka-python
+confluent-kafka
+
+# ---- Cloud SDKs ----
+boto3
+google-cloud-core
+google-cloud-storage
+google-cloud-bigquery
+google-cloud-pubsub
+google-cloud-aiplatform
+
+# ---- DevOps / Infra ----
+typer
+rich
+loguru
+docker
+kubernetes
