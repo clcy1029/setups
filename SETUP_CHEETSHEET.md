@@ -36,12 +36,39 @@ A quick reference for setup steps, dependencies, and useful commands.
     source .venvs/dev-env/bin/activate
     ```
 
-- Setup Dependency list for the global env
+- Install / Update dependency list for the global env
+    ```
+    uv pip install -r requirements.txt
+    ```
+
+- (Optional) Setup Github access
+    1. https://github.com/settings/keys add ssh key to github 
+        ```
+        check if ssh key already exists
+        ls -al ~/.ssh 
+
+        if yes open the 
+        id_ed25519.pub or id_rsa.pub file, copy the token and save it to https://github.com/settings/keys
+
+        if not exist
+        use below command to generate one
+        ssh-keygen -t ed25519 -C "<your email registered in Github.com>" then do the copy
+
+        Done! you local machine now has the permission to push/pull from Github
+
+        (Note) Remote repo has to use git link
+        like "git@github.com:clcy1029/setups.git" instead of "https://github.com/clcy1029/setups.git"
+        ```
+    2. set github global name
+    ```
+    git config --global user.name "你想用的名字"
+    git config --global user.email "你的GitHub邮箱"
+    ```
 
 
 ---
 
-## Useful Dependency List
+## Useful Dependency Explaination
 | Tool/Library              | Install Command                                 | Notes                                 |
 |---------------------------|-------------------------------------------------|---------------------------------------|
 | PyTorch, TorchVision, Torchaudio | `pip install torch torchvision torchaudio` | Core deep learning stack               |
