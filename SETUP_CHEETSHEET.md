@@ -84,7 +84,6 @@ A quick reference for setup steps, dependencies, and useful commands.
 | vLLM                      | `pip install vllm`                              | Fast LLM inference engine             |
 | mlx                       | `pip install mlx`                               | MLX core library for Apple Silicon    |
 | mlx-lm                    | `pip install mlx-lm`                            | MLX LLM inference and utilities       |
-| mlx-examples              | `pip install mlx-examples`                      | Example models and scripts for MLX    |
 | mlx-ops                   | `pip install mlx-ops`                           | Additional MLX operators              |
 | text-generation-inference | `pip install text-generation-inference`          | Hugging Face inference server         |
 
