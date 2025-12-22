@@ -33,7 +33,7 @@ A quick reference for setup steps, dependencies, and useful commands.
     ```
     How to activate the dev-env:
     ```
-    source .venvs/dev-env/bin/activate
+    source ~/.venvs/dev-env/bin/activate
     ```
 
 - Install / Update dependency list for the global env
