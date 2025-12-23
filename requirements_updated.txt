@@ -1,0 +1,87 @@
+# ---- Python tooling ----
+ipython
+jupyter
+jupyterlab
+notebook
+
+# Code quality & formatting
+black
+ruff
+mypy
+pre-commit
+
+# Testing
+pytest
+pytest-cov
+
+# ---- ML & AI ----
+torch>=2.0.0
+numpy>=1.21.0,<2.0
+torchvision
+torchaudio
+torchmetrics
+scikit-learn
+scipy
+pandas
+matplotlib
+seaborn
+plotly
+wandb
+
+# Hugging Face ecosystem for LLM
+transformers
+datasets>=2.20.0
+accelerate
+evaluate           
+peft                
+bitsandbytes       
+trl              
+sentencepiece       
+
+# # Apple MLX stack
+# mlx                 
+# mlx-lm              
+# mlx-data            
+
+# ---- Vector DB ----
+faiss-cpu        
+chromadb         
+qdrant-client   
+weaviate-client  
+
+
+# ---- Backend / APIs ----
+fastapi
+uvicorn
+pydantic
+requests
+httpx
+gradio              # Web UI demo
+
+# ---- Data Engineering ----
+sqlalchemy
+pymongo
+psycopg2-binary
+pyarrow >= 14.0.0
+polars
+dask
+apache-airflow==2.9.3
+
+# ---- Streaming & Messaging ----
+kafka-python
+confluent-kafka
+
+# ---- Cloud SDKs ----
+boto3
+google-cloud-core
+google-cloud-storage
+google-cloud-bigquery
+google-cloud-pubsub
+google-cloud-aiplatform
+
+# ---- DevOps / Infra ----
+typer
+rich
+loguru
+docker
+kubernetes
