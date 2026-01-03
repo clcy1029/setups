@@ -75,6 +75,56 @@ A quick reference for setup steps, dependencies, and useful commands.
     git config --global user.email "your github email"
     ```
 
+## VSCODE IDE Setup
+
+1. Force Python coding to be BLACK FORMATTED (What is black format? [Black formatter](https://www.geeksforgeeks.org/python/python-code-formatting-using-black/))
+
+View -> Command Palette -> Preferences: Open User Settings (JSON)
+Then in the json config copy and paste and insert below to the dictionary.
+```
+"[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+    },
+```
+
+
+2. Force VSCODE to use 4 space as a tab. Similarily update above user setting json
+
+Final json setting:
+```
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontSize": 14,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontSize",
+        "editor.tabSize",
+        "editor.accessibilityPageSize"
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,  
+    "editor.detectIndentation": false, 
+    "editor.accessibilityPageSize": 12,
+    "vs-kubernetes": {
+        "vs-kubernetes.minikube-show-information-expiration": "2024-10-31T02:14:55.674Z",
+        "vscode-kubernetes.helm-path-mac": "/Users/chang/.vs-kubernetes/tools/helm/darwin-amd64/helm"
+    },
+    "explorer.confirmPasteNative": false,
+    "dataWrangler.experiments.fastCsvParsing": true,
+    "git.openRepositoryInParentFolders": "never",
+    "docker.extension.enableComposeLanguageServer": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.enabled": false,
+    "git.confirmSync": false,
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+    },
+    
+}
+```
 
 ---
 
