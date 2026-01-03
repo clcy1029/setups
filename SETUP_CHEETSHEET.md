@@ -41,6 +41,16 @@ A quick reference for setup steps, dependencies, and useful commands.
     uv pip install -r requirements.txt
     ```
 
+- Setup Zshell config on MACOS on terminal launch with "source ~/.venvs/dev-env/bin/activate" auto enabled
+    ```
+    add below line to ~/.zshrc
+
+    if [ -z "$VIRTUAL_ENV" ] && [ -f "$HOME/.venvs/dev-env/bin/activate" ]; then
+        source "$HOME/.venvs/dev-env/bin/activate"
+    fi
+    
+    ```
+
 - (Optional) Setup Github access
     1. https://github.com/settings/keys add ssh key to github 
         ```
@@ -61,8 +71,8 @@ A quick reference for setup steps, dependencies, and useful commands.
         ```
     2. set github global name
     ```
-    git config --global user.name "你想用的名字"
-    git config --global user.email "你的GitHub邮箱"
+    git config --global user.name "your name"
+    git config --global user.email "your github email"
     ```
 
 
