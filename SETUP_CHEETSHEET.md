@@ -126,6 +126,32 @@ Final json setting:
 }
 ```
 
+3. VSCODE Python debug setting
+step1: Add a launch json configuration:
+Command Palette -> Debug:Add a configuration
+Then a new launch.json will be created under .vscode/launch.json (You can also manual create it cuz VSCODE will honor the filename)
+
+step2: Copy and Paste
+```
+{
+      // Use IntelliSense to learn about possible attributes.
+      // Hover to view descriptions of existing attributes.
+      // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+      "version": "0.2.0",
+      "configurations": [
+
+            {
+                  "name": "Python Debugger: Current File Without Parameters",
+                  "type": "debugpy",
+                  "request": "launch",
+                  "program": "${file}",
+                  "console": "integratedTerminal",
+                  "python":"${userHome}/.venvs/dev-env/bin/python"
+            }
+      ]
+}
+```
+
 ---
 
 ## Useful Dependency Explaination
