@@ -35,6 +35,14 @@ A quick reference for setup steps, dependencies, and useful commands.
     ```
     source ~/.venvs/dev-env/bin/activate
     ```
+    How to deactivate the dev-env:
+    ```
+    deactivate
+    ```
+    How to delete this env
+    ```
+    rm -rf ~/.venvs/dev-env/
+    ```
 
 - Install / Update dependency list for the global env
     ```
