@@ -17,3 +17,15 @@ git stash pop
 # 5. 提交并推送
 git push
 ```
+
+
+## Scenario 2. Local has committed changes, git pull failed
+
+```
+# Use git pull --rebase
+git pull --rebase
+
+先把你本地的 commit 暂存起来
+拉取 remote 的新 commit
+把你的 commit 重新 replay 到最新 remote commit 之上
+```
