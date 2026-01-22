@@ -199,6 +199,10 @@ Final json setting:
     ```bash
     npm run build
     ```
+- find all available installed python
+  ```
+  uv python list
+  ```
 
 ---
 
